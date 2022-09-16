@@ -6,15 +6,17 @@ namespace remote_base {
 
 static const char *const TAG = "remote.rc_switch";
 
-const RCSwitchBase RC_SWITCH_PROTOCOLS[9] = {RCSwitchBase(0, 0, 0, 0, 0, 0, false),
-                                             RCSwitchBase(350, 10850, 350, 1050, 1050, 350, false),
-                                             RCSwitchBase(650, 6500, 650, 1300, 1300, 650, false),
-                                             RCSwitchBase(3000, 7100, 400, 1100, 900, 600, false),
-                                             RCSwitchBase(380, 2280, 380, 1140, 1140, 380, false),
-                                             RCSwitchBase(3000, 7000, 500, 1000, 1000, 500, false),
-                                             RCSwitchBase(10350, 450, 450, 900, 900, 450, true),
-                                             RCSwitchBase(300, 9300, 150, 900, 900, 150, false),
-                                             RCSwitchBase(250, 2500, 250, 1250, 250, 250, false)};
+const RCSwitchBase RC_SWITCH_PROTOCOLS[11] = {RCSwitchBase(0, 0, 0, 0, 0, 0, false),
+                                              RCSwitchBase(350, 10850, 350, 1050, 1050, 350, false),
+                                              RCSwitchBase(650, 6500, 650, 1300, 1300, 650, false),
+                                              RCSwitchBase(3000, 7100, 400, 1100, 900, 600, false),
+                                              RCSwitchBase(380, 2280, 380, 1140, 1140, 380, false),
+                                              RCSwitchBase(3000, 7000, 500, 1000, 1000, 500, false),
+                                              RCSwitchBase(10350, 450, 450, 900, 900, 450, true),
+                                              RCSwitchBase(300, 9300, 150, 900, 900, 150, false),
+                                              RCSwitchBase(250, 2500, 250, 1250, 250, 250, false),
+                                              RCSwitchBase(5100, 450, 150, 450, 450, 150, false),
+                                              RCSwitchBase(4680, 1440, 360, 720, 720, 360, false)};
 
 RCSwitchBase::RCSwitchBase(uint32_t sync_high, uint32_t sync_low, uint32_t zero_high, uint32_t zero_low,
                            uint32_t one_high, uint32_t one_low, bool inverted)
